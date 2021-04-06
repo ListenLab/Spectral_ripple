@@ -925,10 +925,10 @@ px_Figure_1_example_spectra_channels_phase_inv
 plot_output_height = ifelse(processor == "Cochlear", 4.9, 4.14)
 plot_output_width = 9.35
 
-ggsave(px_Figure_1_example_spectra_channels,
+ggsave(px_Figure_1_example_spectra_channels_phase_inv,
        file = paste0("Figure_1_example_spectra_channels_" , processor,".png"),
        height = plot_output_height, width = plot_output_width, dpi = 300)
-ggsave(px_Figure_1_example_spectra_channels,
+ggsave(px_Figure_1_example_spectra_channels_phase_inv,
        file = paste0("Figure_1_example_spectra_channels_" , processor,".pdf"),
        height = plot_output_height, width = plot_output_width, device = cairo_pdf)
 
